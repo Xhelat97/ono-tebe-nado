@@ -5,32 +5,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
-        <link rel="stylesheet" href="/fonts/fonts.css" />
-        <link rel="stylesheet" href="/styles/global.css" />
-        <link rel="stylesheet" href="/styles/style.css" />
+        <link rel="stylesheet" href="fonts/fonts.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/style.css" />
     </head>
     <body>
         <header>
-            <div class="header__menu">
+            <nav class="header__menu">
                 <ul class="header__links-list">
                     <li
-                        class="header__links-list-item header__links-list-item_no-bullit"
+                        class="header__links-list-item header__links-list-item_no-bullit header__link_active"
                     >
-                        главная
+                        <a href="" class="header__link_active">главная</a>
                     </li>
-                    <li class="header__links-list-item">посмотреть лоты</li>
-                    <li class="header__links-list-item header__link_active">
-                        об аукционе
+                    <li class="header__links-list-item"><a href="">посмотреть лоты</a></li>
+                    <li class="header__links-list-item ">
+                        <a href="">об аукционе</a>
                     </li>
                 </ul>
                 <a href="" class="header__logo-image">
                     <img
-                        src="/images/logo-black.svg"
+                        src="images/logo-black.svg"
                         alt="логотип"
                         class="header__logo-image"
                     />
                 </a>
-                <div class="address">
+                <address class="address address__header">
                     <a href="tel:+70000000" class="telephone"
                         >+9 999 555 5555</a
                     >
@@ -41,8 +41,8 @@
                         наб. Принсенграхт 263-<br />
                         265, Амстердам
                     </p>
-                </div>
-            </div>
+                </address>
+            </nav>
         </header>
         <main>
             <section class="cover">
@@ -56,7 +56,7 @@
                     >
                     <span class="aligned-text aligned-text_right"
                         ><span class="letter-spacing-extended">н</span>ад<span
-                            class="no-letterspacing"
+                            class="no-letter-spacing"
                             >о</span
                         ></span
                     >
@@ -72,22 +72,22 @@
             <section class="lots">
                 <h2 class="lots__header">Лоты</h2>
                 <ul class="lots__cards">
-                    <li class="lots__cards-element lots__cards-element-film">
+                    <a href="" class="lots__cards-element-link"><li class="lots__cards-element lots__cards-element-film">
                         <div class="overlay"></div>
-                        <a href="" class="lots__cards-element-link"
-                            >Фильм режиссёра, который бросил киношколу</a
+                        <h3 href="" class="lots__cards-element-title"
+                            >Фильм режиссёра, который бросил киношколу</h3
                         >
                         <p class="lots__cards-element-text">
                             Не просто бросил, а ушёл с первой лекции. Какой была
                             бы ваша ставка, если бы вы не знали, что режиссёр —
                             Пол Томас Андерсон?
                         </p>
-                    </li>
-                    <li class="lots__cards-element lots__cards-element-book">
+                    </li></a>
+                    <a href="" class="lots__cards-element-link"><li class="lots__cards-element lots__cards-element-book">
                         <div class="overlay"></div>
-                        <a href="" class="lots__cards-element-link"
+                        <h3 href="" class="lots__cards-element-title"
                             >Книга, где описан один скучный день из жизни
-                            рекламного агента</a
+                            рекламного агента</h3
                         >
                         <p class="lots__cards-element-text">
                             Объёмом почти в тысячу страниц. Иногда без знаков
@@ -97,12 +97,12 @@
                             всё накладывается на эпическую поэму Гомера. Сколько
                             бы вы поставили на «Улисса» Джеймса Джойса?
                         </p>
-                    </li>
-                    <li class="lots__cards-element lots__cards-element-picture">
+                    </li></a>
+                    <a href="" class="lots__cards-element-link"><li class="lots__cards-element lots__cards-element-picture">
                         <div class="overlay"></div>
-                        <a href="" class="lots__cards-element-link"
+                        <h3 href="" class="lots__cards-element-title"
                             >Картина, которую повторит даже 5-летний сын маминой
-                            подруги</a
+                            подруги</h3
                         >
                         <p class="lots__cards-element-text">
                             Ну действительно, там линия, тут кружочек, а здесь и
@@ -111,14 +111,14 @@
                             поставили, если бы не знали, что это — одна из
                             революционных работ Кандинского?
                         </p>
-                    </li>
+                    </li></a>
                 </ul>
                 <a href="" class="lots__link">посмотреть больше</a>
             </section>
             <section class="about">
                 <div class="about__img-circle"></div>
                 <div class="about__description">
-                    <h3 class="about__header">Об аукционе</h3>
+                    <h2 class="about__header">Об аукционе</h2>
                     <p class="about__text">
                         Здесь вы не встретите очередное пафосное собрание
                         невероятно дорогого антиквариата. Наши лоты вообще не
@@ -141,7 +141,7 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="address-footer">
+            <address class="address address__footer">
                 <a href="tel:+70000000" class="telephone">+9 999 555 5555</a>
                 <a href="mailto:mail@example.com" class="mail"
                     >info@sobaka.ge</a
@@ -150,9 +150,9 @@
                     наб. Принсенграхт 263-<br />
                     265, Амстердам
                 </p>
-            </div>
+            </address>
 
-            <ul class="footer__menu-list">
+            <nav class="footer__menu-list">
                 <li class="footer__menu-list-item">
                     <a
                         href=""
@@ -166,31 +166,31 @@
                 <li class="footer__menu-list-item">
                     <a href="" class="footer__menu-link">об аукционе</a>
                 </li>
-            </ul>
+            </nav>
 
             <ul class="footer__social-list">
                 <li class="footer__social-list-item">
                     <a href="" class="footer__social-link"
                         ><img
-                            src="/images/yt.svg"
+                            src="images/yt.svg"
                             class="footer__social-icon"
-                            alt=""
+                            alt="иконка youtube"
                     /></a>
                 </li>
                 <li class="footer__social-list-item">
                     <a href="" class="footer__social-link"
                         ><img
-                            src="/images/vk.svg"
+                            src="images/vk.svg"
                             class="footer__social-icon"
-                            alt=""
+                            alt="иконка вк"
                     /></a>
                 </li>
                 <li class="footer__social-list-item">
                     <a href="" class="footer__social-link"
                         ><img
-                            src="/images/pinterest.svg"
+                            src="images/pinterest.svg"
                             class="footer__social-icon"
-                            alt=""
+                            alt="иконка pinterest"
                     /></a>
                 </li>
             </ul>
